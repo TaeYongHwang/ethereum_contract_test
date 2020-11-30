@@ -10,14 +10,25 @@
 
 ```
 
-
+## 배포
 ```shell script
 $ truffle compile  # 컨트랙트 컴파일
 
 $ truffle migrate #  컨트랙트 배포 
 $ truffle migrate --network ropsten  # ropstrn 테스트넷에 배포
+```
+
+## Interacting with your contracts
+```shell script
+$ truffle console --network ropsten # 롭스텐으로 트러플 콘솔 오픈
+
+
+
+
 
 ```
+
+
 
 ## 네트워크 설정 파일
 ```json
@@ -34,5 +45,6 @@ $ truffle migrate --network ropsten  # ropstrn 테스트넷에 배포
 
 
 
-
-> https://docs.openzeppelin.com/contracts/3.x/erc20
+- 참조 
+> https://docs.openzeppelin.com/contracts/3.x/erc20   
+> https://www.trufflesuite.com/docs/truffle/getting-started/interacting-with-your-contracts
