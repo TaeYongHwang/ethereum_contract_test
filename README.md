@@ -26,6 +26,7 @@ $ truffle migrate --network ropsten  # ropstrn 테스트넷에 배포
 {
     "ropsten": {
         "mnemonic": "사용할 니모닉",
+        "privateKey": "Account 개인키",
         "infuraEndpoint": "사용할 인퓨라 엔드포인트"
     }
 }
