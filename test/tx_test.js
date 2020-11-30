@@ -43,9 +43,7 @@ async function etherTransfer(to, value) {
 }
 
 
-
-
-erc20Test('0x4E7C6D3F8d44990ecc62d951aFdB103118ca274c').then(console.log);
+//erc20Test('0x4E7C6D3F8d44990ecc62d951aFdB103118ca274c').then(console.log);
 // etherTransfer('0x4E7C6D3F8d44990ecc62d951aFdB103118ca274c',1).then(console.log);
 // etherTransferToMyself(1).then(console.log);
 

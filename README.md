@@ -34,8 +34,8 @@ $ truffle migrate --network ropsten  # ropstrn 테스트넷에 배포
 
 ## 순서
 1. .env.json 파일 작성
-2. tx_test.js에서 원하는 함수 주석 해제 후 실행 (컨트랙트 재생성할 시 tx_test의 contractAddress 부분 변경 요망)
-
+2. tx_test.js에서 원하는 함수 주석 해제 (컨트랙트 재생성할 시 tx_test의 contractAddress 부분 변경 요망)
+3. $ npm run test
 
 
 
