@@ -12,7 +12,10 @@ contract TxTest is ERC20 {
         msg.sender.transfer(price*(10**18));
     }
 
-
+    function etherTransfer(address payable to, uint price) payable public {
+        require(msg.sender.balance >= price);
+        to.transfer(price*(10**18));
+    }
 
     receive() external payable {}
 

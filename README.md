@@ -7,10 +7,24 @@
 ├─contracts  # All of my contracts are located
 ├─build      # compile 된 파일들 들어온다
 ├─migrations # 배포할 컨트랙트 지정 등
-
+├─test       # 컨트랙트 실제 전송 테스트 위함
 ```
 
-## 배포
+## 네트워크 설정 파일
+```json
+파일명 : ./.env.json
+
+{
+    "ropsten": {
+        "mnemonic": "사용할 니모닉",
+        "privateKey": "Account 개인키",
+        "account": "privakeKey에 해당하는 주소",
+        "infuraEndpoint": "사용할 인퓨라 엔드포인트"
+    }
+}
+```
+
+## 컨트랙트 배포 
 ```
 $ truffle compile  # 컨트랙트 컴파일
 
@@ -18,20 +32,10 @@ $ truffle migrate #  컨트랙트 배포
 $ truffle migrate --network ropsten  # ropstrn 테스트넷에 배포
 ```
 
-## 네트워크 설정 파일
-```json
-파일명 : ./.env.json
-커맨드 : 
-
-{
-    "ropsten": {
-        "mnemonic": "사용할 니모닉",
-        "privateKey": "Account 개인키",
-        "infuraEndpoint": "사용할 인퓨라 엔드포인트"
-    }
-}
-```
-
+## 순서
+1. .env.json 파일 작성
+2. 컨트랙트 배포 후 해당하는 컨트랙트를 test/tx_test.js 의 contractAddress에 넣어준다.
+3. tx_test.js에서 원하는 함수 주석 해제 후 실행
 
 
 - 참조 
