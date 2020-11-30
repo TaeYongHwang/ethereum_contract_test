@@ -24,7 +24,7 @@
 }
 ```
 
-## 컨트랙트 배포 
+## 컨트랙트 배포 (원래 컨트랙트 사용하려면 사용 X)
 ```
 $ truffle compile  # 컨트랙트 컴파일
 
@@ -34,8 +34,9 @@ $ truffle migrate --network ropsten  # ropstrn 테스트넷에 배포
 
 ## 순서
 1. .env.json 파일 작성
-2. 컨트랙트 배포 후 해당하는 컨트랙트를 test/tx_test.js 의 contractAddress에 넣어준다.
-3. tx_test.js에서 원하는 함수 주석 해제 후 실행
+2. tx_test.js에서 원하는 함수 주석 해제 후 실행 (컨트랙트 재생성할 시 tx_test의 contractAddress 부분 변경 요망)
+
+
 
 
 - 참조 
