@@ -19,8 +19,8 @@ const contract = new web3.eth.Contract(abi, contractAddress, {
 });
 
 /** erc20 전송 테스트 **/
-async function erc20Test() {
-    const res = await contract.methods.transfer(account, 10).send();
+async function erc20Test(to) {
+    const res = await contract.methods.transfer(to, 10).send();
 
     return res;
 }
@@ -45,8 +45,8 @@ async function etherTransfer(to, value) {
 
 
 
-// erc20Test().then(console.log);
+erc20Test('0x4E7C6D3F8d44990ecc62d951aFdB103118ca274c').then(console.log);
 // etherTransfer('0x4E7C6D3F8d44990ecc62d951aFdB103118ca274c',1).then(console.log);
-etherTransferToMyself(1).then(console.log);
+// etherTransferToMyself(1).then(console.log);
 
 
